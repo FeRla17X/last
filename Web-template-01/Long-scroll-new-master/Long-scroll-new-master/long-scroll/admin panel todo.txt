@@ -1,0 +1,24 @@
+Admin Page					|
+-------------					|
+Product upload
+
+Carouselshi postis chatvitva
+
+Costumize (index.php)-s
+
+analytics (search history)
+
+Category Controll
+
+Inbox
+
+Account system
+
+================================
+ADMIN PANELI FONT END
+PRODUCT FONT END
+ONE PRODUCT FONT END
+================================
+MOBILE VERSION
+LANGUAGE VERSION
+================================

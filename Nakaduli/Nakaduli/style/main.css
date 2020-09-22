@@ -1,0 +1,171 @@
+html{scroll-behavior: smooth;}
+body{
+  margin:0;
+  user-select: none;
+  transition: 2s;
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  }
+  body a{
+  user-drag: none;
+  -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+     -khtml-user-drag: none;
+       -moz-user-drag: none;
+        -ms-user-drag: none;
+            user-drag: none;
+  }
+  body img{
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  }
+
+  ::-webkit-scrollbar {
+      width: 12px;
+      display: none;
+  }
+  ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,0,0,0.4);
+  }
+
+/* MENUBAR */
+  .Header{
+      position: sticky;
+      position: -webkit-sticky;
+      top:0;
+      width:100vw;
+      height:10vh;
+      text-align: center;
+      background-color: #eee;
+      z-index: 10;
+    }
+    .Header a{
+      text-decoration: none;
+      font-size:1.7vw;
+      color:#333;
+      letter-spacing: 3px;
+      display: inline-block;
+      margin:1% 0 0 3%;
+    }
+    .Header img{
+      position: absolute;
+      border-radius:100%;
+      cursor: pointer;
+      width:5%;
+      height:8vh;
+      left:2vw;
+      top:1vh;
+    }
+
+/* SLIDESHOW */
+  #slideshow {
+      width:100%;
+      height:60vh;
+      position: relative;
+    }
+    #slideshow > div {
+      position: absolute;
+      width:100%;
+      height:60vh;
+      background-color:blue;
+      z-index: -1;
+    }
+    .hidden {
+      display: none;
+    }
+    #slideshow img {
+      width:100%;
+      height:60vh;
+    }
+    .left-arrow,.right-arrow{
+      position:absolute;
+      cursor: pointer;
+      width:5%;
+      height:40vh;
+      top:20vh;
+      opacity:0.4;
+      transition: 1s;
+    }
+    .right-arrow{
+      top:18vh;
+      right:0;
+      transform: rotate(180deg);
+    }
+    .left-arrow:hover,.right-arrow:hover{opacity:1;}
+
+#service {
+  display: none;
+  margin:5% 0 5% 0;
+}
+#service img{
+  width:50%;
+  height:48vh;
+  float:left;
+}
+
+
+
+
+#Footer{
+  width:100%;
+  height:27vh;
+  bottom:0;
+  background-color: #1C1C1E;
+  margin:5% 0 0 0;
+  color:#F3F3F3;
+  text-align: center;
+}
+#Footer h2{
+  cursor: pointer;
+  display: inline-block;
+  margin:2% 0 0 0;
+}
+#Footer p {
+  display: inline-block;
+  float:right;
+  margin: 0 1% 0% 0;
+}
+#Footer i{
+  cursor: pointer;
+  font-size: 2.5vw;
+  margin-left: 1%;
+  transition: 1s;
+}
+#fb:hover{
+  color:#0469DE;
+}
+#inst:hover{
+  color:#FE5224;
+}
+#twitter:hover{
+  color:#1C9BEA;
+}
+#Footer h5{
+  margin-left:2%;
+  position: absolute;
+  text-align: left;
+  font-size: 0.8vw;
+  letter-spacing: 4px;
+}
